@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("img\workplace.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+:root {
+  --main-color: #4458dc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600px;
+  color: #000;
+  text-transform: uppercase;
+}
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+nav {
+  margin-top: 50px;
+}
+nav .navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.navbar-nav {
+  float: right;
+  list-style: none;
+}
+.navbar-nav li {
+  padding-right: 10px;
+  display: inline-block;
+}
+.navbar-nav li a {
+  color: #000;
+  font-size: 18px;
+}
+.navbar-nav li a.active {
+  color: var(--main-color);
+}
+.navbar-nav li a:hover {
+  color: var(--main-color);
+}
+.banner {
+  margin-top: 120px;
+  width: 100%;
+}
+.banner .banner-left {
+  width: 60%;
+  float: left;
+}
+.banner .banner-left h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.banner .banner-left h3::after {
+  content: "";
+  width: 410px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 23%;
+}
+.banner .banner-left h1 {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.banner .banner-left h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.banner .banner-left .buttons {
+  margin-top: 50px;
+}
+.banner .banner-left .buttons a {
+  border: 2px solid var(--main-color);
+  padding: 15px 40px;
+  margin-right: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.banner .banner-left .buttons a.btn-left {
+  background: var(--main-color);
+  color: #fff;
+}
+.banner .banner-left .buttons a.btn-left:hover {
+  background: #fff;
+  color: #000;
+}
+.banner .banner-left .buttons a.btn-right:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+.banner .banner-right {
+  width: 35%;
+  float: right;
+}
+.banner .banner-right img {
+  max-width: 100%;
+  height: auto;
+}
